@@ -16,9 +16,17 @@ requirements.txt - list all the dependencies that the project needs to run corre
 README.md - includes the text info of the basic introduction of this GitHub Repository, how to run, what's included, lessons learned, questions / uncertainties.  
 
 # Lesson Learned
-During my journey of technical improvement, I effectively utilized sqlite3 to develop and implement data models, ensuring the correctness of the data structure and the consistency of data in the application. Using the Pydantic class, I was able to not only quickly construct basic forms but also enhance the interactivity and functionality of the user interface through its advanced features, such as filterable dropdown menus. Moreover, I gained valuable experience in adjusting database structures, particularly in how to handle practical issues during database upgrades. I found that to prevent errors related to non-existent columns during database updates, it is crucial to delete the old sqlite file first, a key step in ensuring the stable operation of the application.
-
+Importance of URL Encoding:
+I learned how to use the urllib.parse.quote function in Python to encode special characters in URLs, which is crucial for constructing web requests and handling URLs with special characters to ensure their correctness and transferability.
+Web Scraping Techniques:
+I gained knowledge on how to use regular expressions and BeautifulSoup for extracting and parsing web content. This is essential for data collection and automating the process of handling web data.
+Handling Time Series Data:
+I understood the basics of time series data such as sensor data, event data, and stock price data. I learned how to store, query, and analyze these types of data using both SQL and NoSQL databases.
+Using Python’s datetime Module:
+I learned how to utilize Python’s datetime module for handling date and time data, including formatting and parsing time, which is very useful for processing and analyzing data involving timestamps.
+Real-Time Data Handling Techniques:
+I discovered two main techniques for real-time data handling: Websockets and polling. These techniques are crucial in applications that require real-time updates of data.
 
 # questions
-1.How can version control for database schemas be effectively managed to minimize disruption in a production environment?
-2.What are some best practices for automating the migration of data when database schemas change, especially when using tools like sqlite3 in small to medium-sized projects?
+How can we effectively scale databases or data warehouses to support high-frequency data writing and querying for large-scale time series data? Especially when using traditional SQL databases, are there specific strategies or technologies for scaling?
+While using Websockets for true bidirectional communication can provide a better user experience, it may increase the complexity and cost of the system. How can we balance the need for real-time data processing with the use of system resources, especially in resource-limited situations? Are there more cost-effective alternatives?
